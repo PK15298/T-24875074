@@ -59,12 +59,3 @@ function take_selfie()
         document.getElementById("result").innerHTML = '<img id="selfie_image" src="'+data_uri+'"/>';
     });
 }
-
-
-function save()
-{
-  link = document.getElementById("link");
-  image = document.getElementById("selfie_image").src ;
-  link.href = image;
-  link.click();
-}
